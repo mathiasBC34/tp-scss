@@ -1,0 +1,62 @@
+$red-background: red;
+$bleu-background: blue;
+
+
+@mixin square ($size, $circle: false, $light-theme: true, $margin: true) {
+    width: $size;
+    height: $size;
+
+    @if $circle{
+        border-radius: $size/2;
+    }
+    @if $light-theme {
+        background-color: $red-background;
+    } @else {
+        background-color: $bleu-background;
+    }
+}
+
+$circle-margin: 20px;
+$square-margin:10px;
+
+@mixin marge ($margin: true) {
+    
+    @if $margin {
+        margin: $square-margin;
+    } @else {
+        margin: $circle-margin;
+    }
+}
+
+
+//exo 2 tp
+
+$red-background: red;
+$bleu-background: blue;
+
+
+@mixin square ($size, $circle: false, $light-theme: true, $margin: true) {
+    width: $size;
+    height: $size;
+
+    @if $circle{
+        border-radius: $size/2;
+    }
+    @if $light-theme {
+        background-color: $red-background;
+    } @else {
+        background-color: $bleu-background;
+    }
+}
+
+$circle-margin: 20px;
+$square-margin:10px;
+
+@mixin marge ($margin: true) {
+    
+    @if $margin {
+        margin: $square-margin;
+    } @else {
+        margin: $circle-margin;
+    }
+}
